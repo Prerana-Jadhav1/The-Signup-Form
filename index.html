@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="User signup form for registration with email, password, and date of birth validation">
+    <meta name="keywords" content="signup, registration, form, user account">
+    <meta name="author" content="MERN Course Project">
+    <title>Signup Form - User Registration</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📝</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Header section for semantic structure -->
+    </header>
+
+    <main>
+        <div class="form-wrapper">
+            <h2 class="form-title">Signup</h2>
+                
+                <form id="signupForm" action="#" method="POST">
+                    <!-- Full Name Field -->
+                    <div class="form-group">
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Full Name"
+                            required
+                            autocomplete="name"
+                            aria-label="Full Name"
+                        >
+                    </div>
+
+                    <!-- Email Field -->
+                    <div class="form-group">
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Email"
+                            required
+                            autocomplete="email"
+                            aria-label="Email"
+                        >
+                    </div>
+
+                    <!-- Password Field -->
+                    <div class="form-group">
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Password"
+                            required
+                            minlength="6"
+                            autocomplete="new-password"
+                            aria-label="Password"
+                        >
+                    </div>
+
+                    <!-- Confirm Password Field -->
+                    <div class="form-group">
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            placeholder="Confirm Password"
+                            required
+                            minlength="6"
+                            autocomplete="new-password"
+                            aria-label="Confirm Password"
+                        >
+                    </div>
+
+                    <!-- Date of Birth Field -->
+                    <div class="form-group">
+                        <input
+                            type="text"
+                            id="dob"
+                            name="dob"
+                            placeholder="MM/DD/YYYY"
+                            required
+                            pattern="\d{2}/\d{2}/\d{4}"
+                            aria-label="Date of Birth"
+                        >
+                    </div>
+
+                    <!-- Radio Buttons -->
+                    <div class="form-group radio-group">
+                        <div class="radio-options">
+                            <div class="radio-option">
+                                <input 
+                                    type="radio" 
+                                    id="student" 
+                                    name="userType" 
+                                    value="student"
+                                    required
+                                >
+                                <label for="student">Student</label>
+                            </div>
+                            <div class="radio-option">
+                                <input 
+                                    type="radio" 
+                                    id="employee" 
+                                    name="userType" 
+                                    value="employee"
+                                    required
+                                >
+                                <label for="employee">Employee</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Checkbox -->
+                    <div class="form-group checkbox-group">
+                        <div class="checkbox-option">
+                            <input 
+                                type="checkbox" 
+                                id="terms" 
+                                name="terms" 
+                                required
+                            >
+                            <label for="terms">I agree to all the Terms and conditions</label>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn">Signup</button>
+                    </div>
+                </form>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer section for semantic structure -->
+    </footer>
+</body>
+</html>

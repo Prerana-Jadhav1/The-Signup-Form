@@ -1,0 +1,201 @@
+/* Global Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Libre Baskerville', 'Georgia', serif;
+    background-color: #000000;
+    color: #ffffff;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    /* Empty header for semantic structure */
+}
+
+/* Main Content */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* Form Wrapper */
+.form-wrapper {
+    width: 100%;
+    max-width: 680px;
+}
+
+.form-title {
+    font-size: 64px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-family: 'Libre Baskerville', serif;
+    line-height: 1.2;
+}
+
+/* Form Styles */
+#signupForm {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+/* Input Field Styles */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Libre Baskerville', serif;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: #ffffff;
+    font-family: 'Libre Baskerville', serif;
+    opacity: 1;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-bottom-color: #ffffff;
+    outline: none;
+}
+
+/* Radio Button Styles */
+.radio-group {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.radio-options {
+    display: flex;
+    gap: 40px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="radio"] {
+    width: 14px;
+    height: 14px;
+    accent-color: #ffffff;
+    cursor: pointer;
+    margin: 0;
+}
+
+.radio-option label {
+    margin-bottom: 0;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+/* Checkbox Styles */
+.checkbox-group {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.checkbox-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #ffffff;
+    cursor: pointer;
+    margin: 0;
+}
+
+.checkbox-option label {
+    margin-bottom: 0;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 130px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    font-size: 18px;
+    font-family: 'Libre Baskerville', serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* Footer Styles */
+footer {
+    /* Empty footer for semantic structure */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 30px 30px;
+    }
+
+    .form-title {
+        font-size: 48px;
+    }
+
+    .radio-options {
+        gap: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 20px 15px;
+    }
+
+    .form-title {
+        font-size: 36px;
+    }
+
+    .radio-options {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
