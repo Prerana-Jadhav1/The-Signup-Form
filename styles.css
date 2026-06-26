@@ -82,6 +82,15 @@ input[type="password"]:focus {
     outline: none;
 }
 
+/* HTML5 Validation Visual Feedback */
+input:invalid:not(:placeholder-shown) {
+    border-bottom-color: #ff4444;
+}
+
+input:valid:not(:placeholder-shown) {
+    border-bottom-color: #00ff00;
+}
+
 /* Radio Button Styles */
 .radio-group {
     margin-top: 10px;
